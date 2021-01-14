@@ -3,7 +3,7 @@ import '../Styles/navbarStyles.css'
 import {Route, BrowserRouter as Router, Link} from 'react-router-dom';
 import Home from '../pages/Home'
 import Project from '../pages/Project'
-import About from '../pages/About'
+import Skill from '../pages/Skill'
 
 function NavBar() {
     return (
@@ -21,12 +21,12 @@ function NavBar() {
             </ul>
             <ul>
                 <li>
-                    <Link to="/About" className="linkStyle">SKILLS</Link>
+                    <Link to="/Skill" className="linkStyle">SKILLS</Link>
                 </li>
             </ul>
          
         </div>   
-        <Route exact path="/About" component={About}/>
+        <Route exact path="/Skills" component={Skill}/>
         <Route exact path="/Project" component={Project}/>
         <Route exact path="/" component={Home} />
         </Router>

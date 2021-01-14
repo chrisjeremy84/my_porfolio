@@ -1,12 +1,21 @@
-
-const ProjectInfo ={
-    PersonalProjects = [
-        Name = ['Todo App', 'Zzyme'],
-        Time = [ date=[1, 5], month=[2, 5], year=[2021, 2021] ],
-        Info= [One = 'This is a mobile devopment project built entirely by myself. This applicationvwas built as a way of practising the fundamentals of Mobile development using the Javascript based framework, ReactNative. It is yet to be tested and its full features are yet to perfectly ajusted.', 
-    Two
-    ]
-    ]
-}
-
-export default ProjectInfo
+const ProjectInfo = [ //In this file is the project info
+                      //a bit more creativity has to be added like the date, statitics values and more
+    {
+      id: 0,
+      project: 'TO DO APP',
+      info: 'This is a Todo Application built in ...'
+    }, {
+      id: 1,
+      project: 'ecommerce',
+      info: 'This is an ecommerce application built ...'
+    }, {
+        id: 2,
+        project: 'PoPPer',
+        info: 'a feed sharing application for user ...'
+    }, {
+        id: 3,
+        project: 'NoteApp',
+        info: 'Keep Your notes safe and secure in a ...'
+    }
+]
+export default ProjectInfo;
