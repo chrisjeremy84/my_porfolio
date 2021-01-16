@@ -8,7 +8,7 @@ function NavBar() {
     return (
         <Router>
             <div className="box-content rounded md:h-auto w-38 p-4 border-4 ...">
-                <div>
+                <div className="antialiased">
                     <ul className="flex flex-row space-x-4 justify-center">
                         <li>
                          <Link to="/Project" >PROJECTS</Link>
