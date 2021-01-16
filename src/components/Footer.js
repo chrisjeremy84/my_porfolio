@@ -1,9 +1,8 @@
 import React from 'react'
-import '../Styles/Footer.css'
 
 function Footer() {
     return (
-        <div className='Container'>
+        <div className=''>
             <div className='UpperFooter'>
             Upper
             </div>

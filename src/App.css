@@ -1,8 +1,7 @@
-.App {
-  text-align: center;
-  background-image: linear-gradient(to bottom right, #0e507d, #093757);;
-  height: 1020px;
-  color: #fff
+
+body{
+  min-width: 400px;
+  min-height: 500px;
 }
 
 .Header{

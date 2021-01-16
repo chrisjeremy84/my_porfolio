@@ -3,7 +3,7 @@ import React from 'react'
 function Skill() {
     return (
         <div>
-            Skills
+            <h2>Skills</h2>
         </div>
     )
 }
