@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-      <div className=" bg-blue-400 flex flex-col min-h-screen">
+      <div className=" bg-gradient-to-r from-blue-600 to-blue-800  flex flex-col min-h-screen">
         <div className="Header">
   <NavBar/>
   </div>
