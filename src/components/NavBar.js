@@ -3,21 +3,34 @@ import {Route, BrowserRouter as Router, Link} from 'react-router-dom';
 import Home from '../pages/Home'
 import Project from '../pages/Project'
 import Skill from '../pages/Skill'
+import { FiHome, FiSliders, FiPackage,FiGithub , FiInfo, FiLinkedin , FiInstagram} from "react-icons/fi"
 
 function NavBar() {
     return (
         <Router>
-            <div className="box-content rounded md:h-auto w-38 p-4 border-4 ...">
+            <div className="absolute box-border h-auto w-16  border-2 left-6 top-16">
                 <div className="antialiased">
-                    <ul className="flex flex-row space-x-4 justify-center">
+                    <ul className="flex flex-col px-3 py-5 space-y-3">
                         <li>
-                         <Link to="/Project" >PROJECTS</Link>
-                         </li>
-                        <li>
-                        <Link to="/">HOME</Link>
+                        <Link to="/"><FiHome className="text-2xl"/></Link>
                         </li>
                         <li>
-                        <Link to="/Skill">SKILLS</Link>
+                         <Link to="/Project" ><FiPackage className="text-2xl"/></Link>
+                         </li>
+                        <li>
+                        <Link to="/Skill"><FiSliders className="text-2xl"/></Link>
+                        </li>
+                        <li>
+                        <Link to="#"><FiGithub className="text-2xl"/></Link>
+                        </li>
+                        <li>
+                         <Link to="#" ><FiInstagram className="text-2xl"/></Link>
+                         </li>
+                        <li>
+                        <Link to="#"><FiLinkedin className="text-2xl"/></Link>
+                        </li>
+                        <li>
+                        <Link to="#"><FiInfo className="text-2xl"/></Link>
                         </li>
                     </ul>
          

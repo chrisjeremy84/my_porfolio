@@ -16,6 +16,14 @@ const ProjectInfo = [ //In this file is the project info
         id: 3,
         project: 'NoteApp',
         info: 'Keep Your notes safe and secure in a ...'
-    }
+    },{
+      id: 4,
+      project: 'NoteApp',
+      info: 'Keep Your notes safe and secure in a ...'
+  },{
+    id: 5,
+    project: 'NoteApp',
+    info: 'Keep Your notes safe and secure in a ...'
+}
 ]
 export default ProjectInfo;
