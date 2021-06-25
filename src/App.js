@@ -7,7 +7,7 @@ function App() {
   return (
       <div className="relative bg-gradient-to-r from-blue-600 to-blue-800  flex flex-col min-h-screen">
 
-  <div className="relative">
+  <div className="">
   <NavBar/>
   </div>
   <div className="h-full bg-blue-500">

@@ -8,9 +8,9 @@ import { FiHome, FiSliders, FiPackage,FiGithub , FiInfo, FiLinkedin , FiInstagra
 function NavBar() {
     return (
         <Router>
-            <div className="absolute box-border h-auto w-16  border-2 left-6 top-16">
+            <div className="absolute z-10 box-border h-auto w-16  border-2 left-6 top-16">
                 <div className="antialiased">
-                    <ul className="flex flex-col px-3 py-5 space-y-3">
+                    <ul className="relative px-3 py-5 space-y-3">
                         <li>
                         <Link to="/"><FiHome className="text-2xl"/></Link>
                         </li>
