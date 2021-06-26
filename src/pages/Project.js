@@ -7,6 +7,8 @@ function Project() {
             
         <li>
             <div>
+                {/*TO FIGURE OUT*/}
+                {/*GRIDING AND LAYOUTS*/}
                  <div className="box-border border-opacity-10 h-28 md:w-auto p-16 m-8 border-2 rounded-full ...">
                     <div>
                         {project.project}
