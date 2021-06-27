@@ -7,8 +7,9 @@ module.exports = {
   variants: {
     extend: {
       boxSizing: ['hover', 'focus'],
-      
+    
     },
+  
   },
   plugins: [],
 }
