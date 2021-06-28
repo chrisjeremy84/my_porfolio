@@ -6,8 +6,9 @@ import Skill from '../pages/Skill'
 import { FiHome, FiSliders, FiPackage,FiGithub , FiInfo, FiLinkedin , FiInstagram, FiMenu} from "react-icons/fi"
 
 function NavBar() {
-
     const [open, setOpen] = useState(false)
+    var menuDisplay = () => setOpen(!open)
+    let mobile_menu = open ? "h-18 w-48 bg-red-400 bg-gradient-to-r from-blue-600 to-blue-900 shadow-2xl rounded-xl border-r-4 border-blue-600 md:hidden" : "hidden"
     return (
         <Router>
             {/*REMEMBER TAILWIND IS MOBILE FIRST DESIGN, SO ASSIGN STYLES ACCORDINGLY */}
@@ -18,11 +19,28 @@ function NavBar() {
 
                  {/*Mobile menu BUTTON */}
                  <div className="visible md:hidden menu-button text-3xl p-4">
-                    <a onClick={console.log("btn clicked")} href="#"><FiMenu className=""/></a>               
-                    </div>
-                    
-              
-                    {/*LIST OF ICONS */}
+                    <a onClick={menuDisplay}><FiMenu className=""/></a>               
+                </div>
+
+                    {/*MOBILE MENU */}
+                <div className={mobile_menu}>
+
+                <ul className="text-3xl text-white font-bold p-4 flex flex-col space-y-2 items-center ">
+                        <li>
+                        <Link to="/"><a onClick={menuDisplay} className="hover:text-blue-300">Home</a></Link>
+                        </li>
+                        <li>
+                         <Link to="/Project" ><a onClick={menuDisplay} className="hover:text-blue-300">Projects</a></Link>
+                         </li>
+                        <li>
+                        <Link to="/Skill"><a onClick={menuDisplay} className="hover:text-blue-300">Skills</a></Link>
+                        </li>
+                        
+                </ul>
+                </div>
+                
+
+                    {/*DESKTOP MENU*/}
 
                     <ul className="hidden md:flex md:flex-col p-5 space-y-5 text-3xl ">
                         <li>
@@ -58,7 +76,7 @@ function NavBar() {
                    
             
             </div>
-        <Route exact path="/Skills" component={Skill}/>
+        <Route exact path="/Skill" component={Skill}/>
         <Route exact path="/Project" component={Project}/>
         <Route exact path="/" component={Home} />
         </Router>
@@ -66,19 +84,10 @@ function NavBar() {
     )
 }
 
-function mobile_menu(props){
-    return(
-          
-          <div className="w-48 mobile-menu md:hidden bg-gradient-to-r from-blue-600 to-blue-900 z-0 box-border border-r-4 
-          rounded border-blue-600 shadow-2xl visible p-4">
-              {/*Mobile menu */}
-              <div className="flex flex-col  font-semibold h-auto space-y-3">
-                  <a className="hover:bg-blue-600 text-center w-full" href="#">Home</a>
-                  <a href="#">Projects</a> 
-                  <a href="#">Skills</a> 
-              </div>
-                  
-              </div>
-    )
-}
 export default NavBar
+
+ //Successfully implemented a functional and responsive navbar
+                                        //Remove unnecessary code
+                                        //Add Transition for mobile nav
+                                        //Increase Stability
+                                        //...28,06,2021...

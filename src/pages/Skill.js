@@ -1,13 +1,13 @@
-import React from 'react'
+import {React} from 'react'
 
 function Skill() {
+    
     return (
-        <div>
-            {/*TO FIGURE OUT */}
-            {/*GRID AND LAYOUT */}
-            <h2>Skills</h2>
+        <div className="p-14">
+            <h3>Skills</h3>
         </div>
     )
 }
 
-export default Skill;
+export default Skill
+
