@@ -3,27 +3,39 @@ const ProjectInfo = [ //In this file is the project info
     {
       id: 0,
       project: 'TO DO APP',
-      info: 'This is a Todo Application built in ...'
+      description: 'This is a Todo Application built in react native, the application is fully functional and has the following features',
+      features:'',
+      realeaseDate: ''
     }, {
       id: 1,
       project: 'ecommerce',
-      info: 'This is an ecommerce application built ...'
+      description: 'This is an ecommerce application built ...',
+      features:'',
+      realeaseDate: ''
     }, {
         id: 2,
         project: 'PoPPer',
-        info: 'a feed sharing application for user ...'
+        description: 'a feed sharing application for user ...',
+        features:'',
+       realeaseDate: ''
     }, {
         id: 3,
         project: 'NoteApp',
-        info: 'Keep Your notes safe and secure in a ...'
+        description: 'Keep Your notes safe and secure in a ...',
+        features:'',
+       realeaseDate: ''
     },{
       id: 4,
       project: 'NoteApp',
-      info: 'Keep Your notes safe and secure in a ...'
+      description: 'Keep Your notes safe and secure in a ...',
+      features:'',
+      realeaseDate: ''
   },{
     id: 5,
     project: 'NoteApp',
-    info: 'Keep Your notes safe and secure in a ...'
+    description: 'Keep Your notes safe and secure in a ...',
+    features:'',
+    realeaseDate: ''
 }
 ]
 export default ProjectInfo;

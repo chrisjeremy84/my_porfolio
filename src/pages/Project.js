@@ -6,13 +6,14 @@ function Project() {
         return(
             
         <li>
-            <div>
+            <div className="flex justify-center antialiased pt-16">
                 {/*TO FIGURE OUT*/}
                 {/*GRIDING AND LAYOUTS*/}
-                 <div className="box-border border-opacity-10 h-28 md:w-auto p-16 m-8 border-2 rounded-full ...">
-                    <div>
-                        {project.project}
-                    </div>
+                 <div className="rounded-3xl shadow-2xl h-48 w-96 bg-gradient-to-r from-blue-500 to-blue-700">
+                        <h1 className="flex justify-center text-white font-semibold ">{project.project}</h1>
+                        <div className="flex justify-end pt-8 text-white font-medium">
+                            <p>{project.description}</p>
+                        </div>
                 </div>
             </div>
            
@@ -26,8 +27,8 @@ function Project() {
         )
     })
     return (
-        <div> 
-            <ul>
+        <div > 
+            <ul className ="space-y-4">
                 {projects}
             </ul>
         </div>
