@@ -13,7 +13,8 @@ function Skill() {
     //clickhandler is to close the modal and get data from listed contents
     const [modal, setModal] = useState(false);
     const [modalSkillsName, setModalSkillsName] = useState("");
-    const [modalToolsName, setModalToolsName] = useState("");
+    const [modalToolsName, setModalToolsName] = useState([]);
+    const [modalSkills, setModalSkills] = useState([]);
     const [modalSkillsDesc, setModalSkillsDesc] = useState("");
     const [modalImg, setImg] = useState("");
     const clickHandler = (Data) => {
@@ -23,16 +24,26 @@ function Skill() {
         setModalSkillsName(Data.SkillName);
         setModalToolsName(Data.Tools)
         setModalSkillsDesc(Data.description);
+        setModalSkills(Data.skills)
         
     }
-    const Skills = SkillsInfo.map(Skill=>{
+
+    const DisplaySkills = modalSkills.map(Skills => {
+        return <li className="bg-blue-700 font-semibold rounded-md p-1" key={Skills}>{Skills}</li>
+    })
+
+    const DisplayTools = modalToolsName.map(Tools => {
+        return <li className="bg-blue-600 font-semibold rounded-md p-1" key={Tools}>{Tools}</li>
+    })
+
+    const DisplaySkillsContent = SkillsInfo.map(Skill=>{
         return(
             <div onClick={() => {setModal(true); clickHandler(Skill);}}  
-                    className="h-80 w-56 bg-gradient-to-r from-blue-800 to-blue-600 rounded-3xl cursor-pointer">
+                    className="h-80 w-56 bg-blue-500 border-r-4 border-blue-800 hover:border-blue-50 antialiased rounded-3xl cursor-pointer">
                     <ul className ="flex flex-col">
                         <li>
                             <div className="w-full h-64 pt-3 object-cover rounded-3xl" style={{ backgroundImage : `url(${Skill.image})`}}>
-                            <img className="w-full h-64 pt-3 object-cover object-left" src={Skill.image} alt={Skill.SkillName}/>
+                            <img className="w-full h-64 pt-3 object-cover object-left " src={Skill.image} alt={Skill.SkillName}/>
                             </div>
 
                             <div className="text-white p-3 font-semibold">
@@ -48,9 +59,9 @@ function Skill() {
 })
     return (
        
-            <div  className="flex flex-col md:flex-row pl-20 space-y-4 md:space-y-0 pb-24 md:pl-36 pr-14 pt-36 md:space-x-4">
+            <div  className="flex flex-col md:flex-row pl-20 space-y-4 md:space-y-0 pb-24 md:pl-36 pr-14 pt-36 md:space-x-4 antialiased">
                 
-                {Skills}
+                {DisplaySkillsContent}
 
                 <Modal 
                             style={{
@@ -84,7 +95,21 @@ function Skill() {
                             <div className="">
                                <p className="relative" >{modalSkillsDesc}</p> 
                             </div>
-                            <h2>{modalToolsName}</h2>
+                            <div className=' pb-2 space-x-6 flex flex-row'>
+                                <h3>Skills: </h3>
+                                <ul className="">
+                                        <li className="space-y-3">
+                                        {DisplaySkills}
+                                        </li>
+                                    </ul>
+                                    <h3>Tools: </h3>
+                                    <ul >
+                                        <li className="space-y-3 ">
+                                        {DisplayTools}
+                                        </li>
+                                    </ul>
+                            </div>
+                                    
                             </div>
                         </Modal>
         </div>

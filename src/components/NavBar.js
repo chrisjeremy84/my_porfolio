@@ -63,13 +63,13 @@ function NavBar() {
                         </li>
 
                         <li>
-                            <Tippy placement="right" content="Project">
+                            <Tippy placement="right" content="My Projects">
                                 <Link to="/Project" ><FiPackage className=""/></Link>
                             </Tippy>
                          </li>
 
                         <li>
-                            <Tippy placement="right" content="Skill">
+                            <Tippy placement="right" content="My Skills">
                         <Link to="/Skill"><FiSliders className=""/></Link>
                             </Tippy>
                         </li>

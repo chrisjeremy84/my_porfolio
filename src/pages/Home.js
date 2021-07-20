@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import education from '../svg/education.svg'
 
 
 function Home() {
@@ -11,6 +12,23 @@ function Home() {
             <h1 className="pt-18 lg:text-6xl sm:text-2xl text-white">Chris Jeremie</h1>
             <h1 className="lg:text-5xl sm:text-2xl text-white">ISHIMWE</h1>
             {/*BEST IMAGE UPLOAD// LOAD EVENT */}
+            <div className="h-40 w-40">
+                {/* Education section */}
+                <h2>education</h2>
+                
+            </div>
+
+            <div className=" h-40 w-40">
+                {/* Experience section */}
+                <h2>experience</h2>
+                
+            </div>
+
+            <div className=" h-40 w-40">
+                {/* Organization section */}
+                <h2>Organization</h2>
+                
+            </div>
         </div>
     )
 }

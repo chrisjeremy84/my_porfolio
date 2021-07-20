@@ -3,45 +3,68 @@ const ProjectInfo = [ //In this file is the project info
     {
       id: 0,
       project: 'TO DO APP',
-      description: 'This is a Todo Application built in react native, the application is fully functional and has the following features',
-      tools: '',
-      features:'',
-      realeaseDate: ''
+      description: 'This is a Todo Application built in react native, with basic features',
+      tools: ['React Native', 'Expo', 'Node', 'Git', 'Javascript', 'HTML', 'CSS'],
+      gitLink:'https://github.com/chrisjeremy84/todoapp-v1',
+      realeaseDate: 'Released'
     }, {
       id: 1,
-      project: 'ecommerce',
-      description: 'This is an ecommerce application built ...',
-      tools: '',
-      features:'',
-      realeaseDate: ''
+      project: 'Recipe',
+      description: 'A simple recipe App that can search foods by API usage, can illustrate ingredients and more data',
+      tools: ['React', 'Node', 'Git', 'Bootstrap', 'Javascript', 'HTML', 'CSS'],
+      gitLink:'https://github.com/chrisjeremy84/foodapi',
+      realeaseDate: 'Released'
     }, {
         id: 2,
-        project: 'PoPPer',
-        description: 'a feed sharing application for user ...',
-        tools: '',
-        features:'',
-       realeaseDate: ''
+        project: 'github API',
+        description: 'Simple API usage for github, fetching user data',
+        tools: ['React', 'Node', 'Git', 'CSS', 'Javascript', 'HTML', 'CSS'],
+        gitLink:'https://github.com/chrisjeremy84/github_finder',
+       realeaseDate: '31-07-2021'
     }, {
         id: 3,
-        project: 'NoteApp',
-        description: 'Keep Your notes safe and secure in a ...',
-        tools: '',
-        features:'',
-       realeaseDate: ''
+        project: 'portfolio',
+        description: 'Simplistic design for my portfolio',
+        tools: ['React', 'TailwindCSS', 'Node', 'Git', 'Webpack', 'Javascript', 'HTML', 'CSS'],
+        gitLink:'https://github.com/chrisjeremy84/my_porfolio',
+       realeaseDate: '31-08-2021'
     },{
       id: 4,
-      project: 'NoteApp',
-      description: 'Keep Your notes safe and secure in a ...',
-      tools: '',
-      features:'',
-      realeaseDate: ''
+      project: 'psyred.com',
+      description: 'Psyred, a branding I use to develop and engage my skills, entirely written in react',
+      tools: ['React', 'TailwindCSS', 'Node', 'Git', 'Webpack', 'Redux', 'Javascript', 'HTML', 'CSS'],
+      gitLink:'https://github.com/PSYRED/psyred.com',
+      realeaseDate: '31-07-2021'
   },{
     id: 5,
-    project: 'NoteApp',
-    description: 'Keep Your notes safe and secure in a ...',
-    tools: '',
-    features:'',
-    realeaseDate: ''
+    project: 'Flixcave',
+    description: 'Flixcave a project based on a flexible and robust language like Python, This webapp allows users to search and rate their movies, as AI relatively studies their choices for future recomendations',
+    tools: ['Python', 'Django', 'Pytorch', 'TailwindCSS', 'HTML', 'CSS'],
+    gitLink:'',
+    realeaseDate: '31-07-2021'
+},{
+  id: 6,
+    project: 'eCommerce',
+    description: 'A simple eCommerce template',
+    tools: ['React', 'Next.js', 'TailwindCSS', 'Webpack', 'Javascript', 'HTML', 'CSS'],
+    gitLink:'https://github.com/chrisjeremy84/eCommerce',
+    realeaseDate: '31-07-2021'
+},
+{
+  id: 7,
+    project: 'Spotify_API',
+    description: 'Using REST API, using spotify API to search songs using Spotify databses',
+    tools: ['React', 'MaterialUI', 'Node', 'Javascript', 'HTML', 'CSS'],
+    gitLink:'https://github.com/chrisjeremy84/SPoTifyAPI',
+    realeaseDate: '31-07-2021'
+},
+{
+  id: 8,
+    project: 'BLOG APP',
+    description: 'Using Django, A good practice path for illustrating the fast development of web applications with django, allowing users to sign up and share content with full security',
+    tools: ['Django', 'bootstrap 4', 'Python', 'HTML', 'CSS'],
+    gitLink:'https://github.com/chrisjeremy84/SPoTifyAPI',
+    realeaseDate: '31-07-2021'
 }
 ]
 export default ProjectInfo;

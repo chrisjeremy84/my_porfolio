@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import ProjectInfo from '../Data/ProjectInfo'
 import Modal from 'react-modal'
-
+import {FiGithub} from "react-icons/fi"
 
 function Project() {
 
@@ -10,17 +10,28 @@ function Project() {
     //modals useState to pass data to the modal
     const [modal, setModal] = useState(false);
     const [modalProjectName, setModalProjectName] = useState("");
-    const [modalToolsName, setModalToolsName] = useState("");
+    const [modalToolsName, setModalToolsName] = useState([]);
     const [modalProjectDesc, setModalProjectDesc] = useState("");
+    const [modalGitLink, setModalGitLink] = useState("");
+    const [modalDate, setModalDate] = useState("");
     
+
     const clickHandler = (Data) => {
         
         
         setModalProjectName(Data.project);
-        setModalToolsName(Data.Tools)
+        setModalToolsName(Data.tools)
         setModalProjectDesc(Data.description);
-        
+        setModalGitLink(Data.gitLink);
+        setModalDate(Data.realeaseDate);
     }
+
+
+    const DisplayTools = modalToolsName.map(Tools => {
+        return <li className="bg-blue-700 font-semibold rounded-md p-1" key={Tools}>{Tools}</li>
+    })
+
+
     const projects = ProjectInfo.map(project =>{
         return(
             
@@ -29,7 +40,7 @@ function Project() {
             className="flex justify-center antialiased">
                 {/*TO FIGURE OUT*/}
                 {/*GRIDING AND LAYOUTS*/}
-                 <div className="rounded-3xl shadow-2xl h-28 md:h-48 w-96 bg-gradient-to-r from-blue-500 to-blue-700">
+                 <div className="rounded-3xl shadow-2xl h-28 md:h-48 w-96 bg-blue-500 border-r-4 border-blue-800 hover:border-blue-50 ">
                         <h1 className="flex justify-center text-white font-semibold ">{project.project}</h1>
                         <div className="flex justify-center p-4 text-white font-medium">
                             <p>{project.description}</p>
@@ -48,7 +59,7 @@ function Project() {
     })
     return (
         <div > 
-            <ul className ="w-auto pt-8 pb-14 space-y-3 md:space-y-6">
+            <ul className ="w-auto overflow-ellipsis overflow-hidden pt-8 pb-14 space-y-3 md:space-y-6">
                 {projects}
             </ul>
 
@@ -68,9 +79,10 @@ function Project() {
                                     borderRadius: '20px',
                                     border: "none",
                                     boxShadow: "12px 5px 12px 12px rgba(0, 0, 0, .2)",
-                                    position: "fixed",
+                                    position: "relative",
                                     height: "500px",
-                                    left: "250px",
+                                    left: "200px",
+                                    right: "200px",
                                     width: "800px"
                                     }
                                     }}
@@ -84,9 +96,16 @@ function Project() {
                             <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" onClick={() => {setModal(false)}}>close</button>
                             </div>
                             <div className="">
-                               <p className="relative" >{modalProjectDesc}</p> 
+                                <h3 className="font-medium">Description:</h3>
+                               <p className="relative" >{modalProjectDesc}</p>
                             </div>
-                            <h2>{modalToolsName}</h2>
+                            <ul className="w-auto">
+                                        <li className="space-y-3 ">
+                                        {DisplayTools}
+                                        </li>
+                                    </ul>
+                            <h3>Release Date: {modalDate}</h3>
+                            <a className="hover:border-green-700" href={modalGitLink}><FiGithub/></a>
                             </div>
                         </Modal>
         </div>
