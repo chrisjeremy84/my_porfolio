@@ -14,7 +14,7 @@ function App() {
   </div>
 
   {/*FOOTER */}
-  <div className="h-full bg-blue-500">
+  <div className="h-full w-screen">
     <Footer/>
   </div>
   </div>

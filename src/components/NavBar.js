@@ -4,6 +4,9 @@ import Home from '../pages/Home'
 import Project from '../pages/Project'
 import Skill from '../pages/Skill'
 import { FiHome, FiSliders, FiPackage,FiGithub , FiInfo, FiLinkedin , FiInstagram, FiMenu} from "react-icons/fi"
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
+
 
 function NavBar() {
     const [open, setOpen] = useState(false)
@@ -13,9 +16,19 @@ function NavBar() {
         <Router>
             {/*REMEMBER TAILWIND IS MOBILE FIRST DESIGN, SO ASSIGN STYLES ACCORDINGLY */}
            {/*MAIN NAVIGATION OUTLINE */}
-            <div className="antialiased md:fixed bg-gradient-to-r from-blue-600 to-blue-900 z-10 box-border border-r-4 
-            rounded-full md:rounded-lg border-blue-600 shadow-2xl h-16 w-16 relative mt-8 ml-10 
-            md:h-auto md:w-auto md:left-6  md:bottom-16">
+            <div className="antialiased 
+                            md:fixed bg-gradient-to-r 
+                            from-blue-600 to-blue-900 
+                            z-10 
+                            box-border 
+                            border-r-4 
+                            rounded-full 
+                            md:rounded-lg 
+                            border-blue-600 
+                            shadow-2xl 
+                            h-16 w-16 
+                            relative mt-8 ml-10 
+                            md:h-auto md:w-auto md:left-6  md:bottom-16">
 
                  {/*Mobile menu BUTTON */}
                  <div className="visible md:hidden menu-button text-3xl p-4">
@@ -44,25 +57,42 @@ function NavBar() {
 
                     <ul className="hidden md:flex md:flex-col p-5 space-y-5 text-3xl ">
                         <li>
-                        <Link to="/"><FiHome className=""/></Link>
+                            <Tippy placement="right" content="Home">
+                                <Link to="/"><FiHome className=""/></Link>
+                            </Tippy>
                         </li>
+
                         <li>
-                         <Link to="/Project" ><FiPackage className=""/></Link>
+                            <Tippy placement="right" content="Project">
+                                <Link to="/Project" ><FiPackage className=""/></Link>
+                            </Tippy>
                          </li>
+
                         <li>
+                            <Tippy placement="right" content="Skill">
                         <Link to="/Skill"><FiSliders className=""/></Link>
+                            </Tippy>
                         </li>
                         <li>
-                        <Link to="#"><FiGithub className=""/></Link>
+                            <Tippy placement="right" content="Github">
+                                <Link to="#"><FiGithub className=""/></Link>
+                            </Tippy>
                         </li>
                         <li>
-                         <Link to="#" ><FiInstagram className=""/></Link>
+                            <Tippy placement="right" content="Instagram">
+                              <Link to="#" ><FiInstagram className=""/></Link>  
+                            </Tippy>
                          </li>
                         <li>
-                        <Link to="#"><FiLinkedin className=""/></Link>
+                            <Tippy placement="right" content="Linkedin">
+                            <Link to="#"><FiLinkedin className=""/></Link>    
+                            </Tippy>  
                         </li>
                         <li>
-                        <Link to="#"><FiInfo className=""/></Link>
+                            <Tippy placement="right" content="Info">
+                             <Link to="#"><FiInfo className=""/></Link>   
+                            </Tippy>
+                        
                         </li>
                     </ul>
 

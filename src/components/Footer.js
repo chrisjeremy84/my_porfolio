@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className="container mx-auto absolute bottom-0 bg-red-600 ">
+        <div className="container mx-auto absolute bottom-0 bg-red-600 w-screen">
             <div className='UpperFooter'>
             Upper
             </div>
