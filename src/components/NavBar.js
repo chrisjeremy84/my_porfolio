@@ -3,7 +3,7 @@ import {Route, BrowserRouter as Router, Link} from 'react-router-dom';
 import Home from '../pages/Home'
 import Project from '../pages/Project'
 import Skill from '../pages/Skill'
-import { FiHome, FiSliders, FiPackage,FiGithub , FiInfo, FiLinkedin , FiInstagram, FiMenu} from "react-icons/fi"
+import { FiHome, FiSliders, FiPackage,FiGithub , FiLinkedin , FiTwitter, FiMenu} from "react-icons/fi"
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 
@@ -75,24 +75,18 @@ function NavBar() {
                         </li>
                         <li>
                             <Tippy placement="right" content="Github">
-                                <Link to="#"><FiGithub className=""/></Link>
+                                <Link to="https://github.com/chrisjeremy84/"><FiGithub className=""/></Link>
                             </Tippy>
                         </li>
                         <li>
-                            <Tippy placement="right" content="Instagram">
-                              <Link to="#" ><FiInstagram className=""/></Link>  
+                            <Tippy placement="right" content="Twitter">
+                              <Link to="https://twitter.com/5thfader" ><FiTwitter className=""/></Link>  
                             </Tippy>
                          </li>
                         <li>
                             <Tippy placement="right" content="Linkedin">
-                            <Link to="#"><FiLinkedin className=""/></Link>    
+                            <Link to="https://www.linkedin.com/in/ishimwe-chris-jeremie-290250180/"><FiLinkedin className=""/></Link>    
                             </Tippy>  
-                        </li>
-                        <li>
-                            <Tippy placement="right" content="Info">
-                             <Link to="#"><FiInfo className=""/></Link>   
-                            </Tippy>
-                        
                         </li>
                     </ul>
 
