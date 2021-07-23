@@ -8,7 +8,7 @@
 * [Setup](#setup)
 
 ## Introduction
-This repository contauns codes used for the delopment of my own personal [portfolio](https://chrisjeremie.ga/), Please feel free to tune and improve the code if you'd like. The website does contain a few minor issues, but all of that can be fixed quite easily.
+This repository contauns codes used for the delopment of my own personal [portfolio](https://chrisjeremie.ga/), Please feel free to tune and improve the code if you'd like. The website does contain a few minor issues, but all of that can be fixed quite easily. you can find these issues in the issues section
 
 ## Objective
 The objective of this project is use requests as to get food searched by a user.
