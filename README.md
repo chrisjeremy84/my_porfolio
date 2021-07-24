@@ -1,5 +1,5 @@
 # my_portfolio
-<img src="https://user-images.githubusercontent.com/53315778/126880560-cedafe21-d1a9-4d65-9b5f-0aa80ff13d6c.png" height=360 width=460/>
+<img src="https://user-images.githubusercontent.com/53315778/126880560-cedafe21-d1a9-4d65-9b5f-0aa80ff13d6c.png" height=360 width=580/>
 
 ## Table of contents
 * [Introduction](#Introduction)
