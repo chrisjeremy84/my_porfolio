@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+    @apply w-auto  mb-28 overflow-clip overflow-hidden pt-8 pb-14 space-y-3 md:space-y-6;
+  }

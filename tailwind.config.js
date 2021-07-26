@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     extend: {},
   },
+  fontFamily: {
+    sans: ['Graphik', 'sans-serif'],
+    serif: ['Merriweather', 'serif'],  
+    roboto: ['Roboto Slab', 'serif']
+  },
   variants: {
     extend: {
       boxSizing: ['hover', 'focus'],

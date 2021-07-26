@@ -58,8 +58,8 @@ function Project() {
         )
     })
     return (
-        <div > 
-            <ul className ="w-auto  mb-28 overflow-clip overflow-elipsis pt-8 pb-14 space-y-3 md:space-y-6">
+        <div id='project'> 
+            <ul className ="card">
                 {projects}
             </ul>
 

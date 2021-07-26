@@ -1,6 +1,9 @@
 import './App.css';
 import Footer from './components/Footer';
-import NavBar from './components/NavBar';
+import NavBar2 from './components/NavBar2';
+import Home from './pages/Home';
+import Project from './pages/Project';
+import Skill from './pages/Skill';
 
 
 function App() {
@@ -10,11 +13,18 @@ function App() {
         
 {/*NAVBAR */}
   <div className="">
-  <NavBar/>
-  </div>
+  <NavBar2/>
 
+  {/*Body */}
+  </div>
+    <Home/>
+    <Project/>
+    <Skill/>
+    <div>
+
+    </div>
   {/*FOOTER */}
-  <div className="h-full w-screen">
+  <div >
     <Footer/>
   </div>
   </div>

@@ -59,7 +59,7 @@ function Skill() {
 })
     return (
        
-            <div  className="flex flex-col md:flex-row pl-20 space-y-4 md:space-y-0 pb-24 md:pl-36 pr-14 pt-36 md:space-x-4 antialiased">
+            <div  className="flex flex-col md:flex-row pl-20 space-y-4 md:space-y-0 mb-60 md:pl-36 pr-14 pt-36 md:space-x-4 antialiased" id='skill'> 
                 
                 {DisplaySkillsContent}
 
