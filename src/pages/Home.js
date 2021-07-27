@@ -19,7 +19,7 @@ function Home() {
         <p 
         className="text-center font-medium 
         text-gray-300 text-2xl p-14" 
-        >The  path to automated technology is Artificial Inteligence.</p>
+        >If it doesn't work, it doesn't matter how fast it doesn't work. <br/>  - Mich Ravera</p>
       </div>
      {/* Education */}
       <div className="relative mt-20 lg:mt-24">
