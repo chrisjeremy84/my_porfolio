@@ -10,13 +10,16 @@ function Home() {
         <div className='subpixel-antialiased ' id='home'>
             
           {/* Header */}
-    <section className="font-roboto lg:mt-60">
+    <section className=" min-h-screen min-w-screen font-roboto mt-20 lg:mt-60">
      {/* Welcome */}
       <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 className=" font-extrabold text-blue-400  text-center ">The portfolio</h1>
-        <h2 className=" text-center ">Chris Jeremie</h2>
+        <h1 className=" font-extrabold text-blue-400  text-center ">PORTFOLIO</h1>
+        <h2 className=" text-center lg:text-5xl text-3xl font-medium">Chris Jeremie</h2>
         <h2 className=" font-semibold lg:text-7xl text-center">Ishimwe, 22</h2>
-        <p className="text-center font-medium text-gray-300 text-2xl p-14" >The  path to automated technology is Artificial Inteligence.</p>
+        <p 
+        className="text-center font-medium 
+        text-gray-300 text-2xl p-14" 
+        >The  path to automated technology is Artificial Inteligence.</p>
       </div>
      {/* Education */}
       <div className="relative mt-20 lg:mt-24">
@@ -24,7 +27,7 @@ function Home() {
            {/* Illustration */}
           <div className="flex flex-1 justify-center z-0 mb-10 lg:mb-0">
             <img
-              className="w-2/6 h-3/6 sm:w-3/4 sm:h-3/4"
+              className=" w-1/4 md:w-2/4"
               src={education}
               alt="education"
             />
@@ -52,7 +55,7 @@ function Home() {
            {/* Illustration */}
           <div className="flex flex-1 justify-center z-0 mb-10 lg:mb-0">
             <img
-              className="w-2/6 h-3/6 sm:w-3/4 sm:h-3/4"
+              className="w-1/4 md:w-2/4"
               src={done}
               alt=""
             />
@@ -85,7 +88,7 @@ function Home() {
            {/* Illustration */}
           <div className="flex flex-1 justify-center z-0 mb-10 lg:mb-0">
             <img
-              className="w-2/6 h-3/6 sm:w-3/4 sm:h-3/4"
+              className="w-1/4 md:w-2/4"
               src={launch}
               alt="education"
             />

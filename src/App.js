@@ -1,6 +1,6 @@
 import './App.css';
 import Footer from './components/Footer';
-import NavBar2 from './components/NavBar2';
+import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Project from './pages/Project';
 import Skill from './pages/Skill';
@@ -13,7 +13,10 @@ function App() {
         
 {/*NAVBAR */}
   <div className="">
-  <NavBar2/>
+    <div className="z-10 fixed m-8 md:mt-60">
+    <NavBar/>
+    </div>
+  
 
   {/*Body */}
   </div>

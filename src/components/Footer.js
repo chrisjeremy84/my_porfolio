@@ -43,7 +43,7 @@ function Footer() {
              </Link>
             </ul>
             
-            <div className='p-3 text-white subpixel-antialiased font-medium'>
+            <div className=' p-3 text-sm text-gray-400 subpixel-antialiased font-medium'>
                 <ul>
                     <li>chrisjeremy17@gmail.com</li>
                     <li>(+48)516991476</li>
