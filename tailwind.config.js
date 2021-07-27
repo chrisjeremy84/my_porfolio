@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/App.js', './src/component/Footer.js', './src/component/NavBar2.js' , './src/pages/Home.js' , './src/component/Project.js', './src/component/Skill.js'],
+  purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

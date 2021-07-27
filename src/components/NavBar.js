@@ -127,7 +127,7 @@ function desktopNav() {
 }
 
 function NavBar() {
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
     return (
         <div 
         className="">
