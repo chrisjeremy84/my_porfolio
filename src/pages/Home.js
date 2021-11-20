@@ -67,13 +67,13 @@ function Home() {
                 
                 <li className="text-blue-400 pt-5 ">Junior ICT Engineer</li>
                 <li >Atos</li>
-                <li className="font-bold">09-2020 to  09-2021</li>
+                <li className="font-bold">09-2020 to  PRESENT</li>
                 <li className="text-blue-400 pt-5">Marketing Intern</li>
                 <li className="">Afrifoam</li>
                 <li className="font-bold">07-2017 to  08-2018</li>
                 <li className="text-blue-400 pt-5">Junior Web developer</li>
                 <li >Emarkits</li>
-                <li className="font-bold">05-2016 to  01-2017</li>
+                <li className="font-bold">05-2016 to  07-2017</li>
                 
             </ul>
             

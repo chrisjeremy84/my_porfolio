@@ -12,7 +12,7 @@ image:web ,
 SkillName: 'Web development',
 description: 'This section mostly involve the development of websites(Front-end), which can range from single statis web page to a web application, In this section you will find tools and skills used for that pupose.',
 skills : ['Web design', 'UI & UX Design', 'Graphic design'],
-Tools: ['Git', 'VS code', 'Node', 'HTML', 'CSS', 'React(17.0.1)', 'Redux' ,'Bootstrap(3,4,5)', 'tailwindCSS', 'webpack']
+Tools: ['Git', 'VS code', 'Node', 'HTML', 'CSS', 'React JS(17.0.1)', 'Redux' ,'Bootstrap(3,4,5)', 'tailwindCSS', 'webpack']
 }, {
 
 id: 1,
@@ -28,7 +28,7 @@ image:planning,
 SkillName: 'Project Design',
 description: 'In this section, is a brief view of the techniques I use to prepare and maintain different projects.',
 skills : ['Task managment', 'Team player', 'Quality management', 'Project Design'],
-Tools: ['Github','Agile', 'Jira', 'Confluence' ,'Microsoft Outlook', 'Microsoft Teams', 'Figma', 'Framer']
+Tools: ['Github','Agile', 'Jira', 'Confluence' , 'Figma', 'Framer']
 }, {
 
 id: 3,
@@ -44,7 +44,7 @@ image:devops ,
 SkillName: 'Other',
 description: 'Other skills worth mentioning.',
 skills : ['Language(English & French)', 'Linux Administration','Time management', 'Critical thinking', 'Communication'],
-Tools: []
+Tools: ['Microsoft Outlook', 'Microsoft Teams']
 }
 
 ]

@@ -14,7 +14,8 @@ function Project() {
        
         return(
             
-        <div className=" p-7 bg-gray-500 border-r-4 hover:border-blue-700 border-blue-500 rounded-3xl flex flex-col justify-center h-auto w-auto space-y-3 md:space-y-5">
+        <div className=" p-7  bg-gradient-to-r from-blue-600 
+        to-blue-400 border-r-4 hover:border-blue-700 border-blue-500 rounded-3xl flex flex-col justify-center h-auto w-auto space-y-3 md:space-y-5">
             <button onClick={()=>{setShow(!show)}} className="text-white font-semibold">{project.project}</button>
             <br/>
            
@@ -54,8 +55,8 @@ function Project() {
         )
     })
     return (
-        <div className=" p-16 md:p-48 flex flex-col space-y-2 min-w-screen" id='project'> 
-            <h2 className="text-2xl font-medium flex justify-center mb-6">Projects</h2>
+        <div className=" p-16 md:p-56 flex flex-col space-y-2 min-w-screen" id='project'> 
+            <h2 className="text-2xl md:text-4xl font-semibold text-gray-300 flex justify-center mb-6">Projects</h2>
             {projects}
         </div>
     )
