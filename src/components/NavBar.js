@@ -64,9 +64,8 @@ function MobileNav(Show) {
 function desktopNav() {
     return (
         <div 
-        className="w-auto h-auto bg-gradient-to-r from-blue-700 
-        to-blue-500 hover:from-blue-500 hover:to-blue-700
-        rounded-full shadow-2xl border-r-4 hover:border-r-6 border-blue-600 
+        className="w-auto h-auto
+        rounded-full shadow-2xl border-r-4 border-blue-600
         absolute m-16
         hidden md:flex md:flex-col 
         p-5 lg:p-7 space-y-5 text-3xl">
@@ -84,7 +83,7 @@ function desktopNav() {
              </Link>
 
              <Link
-             className="text-2xl lg:text-3xl font-semibold hover:text-gray-300 hover:translate-y-1 transition transform"
+             className="text-2xl lg:text-3xl font-semibold hover:text-gray-300 hover:scale-150 transition transform"
              activeClass="active"
              to="project"
              spy={true}
@@ -96,7 +95,7 @@ function desktopNav() {
              </Link>
 
              <Link
-             className="text-2xl lg:text-3xl font-semibold hover:text-gray-300 hover:translate-y-1 transition transform"
+             className="text-2xl lg:text-3xl font-semibold hover:text-gray-300 hover:scale-150 transition transform"
              activeClass="active"
              to="skill"
              spy={true}
